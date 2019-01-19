@@ -1,4 +1,0 @@
-function reverseNumber(n) {
-  let str = n.toString().split("").reverse().join("");
-  return parseInt(str)*Math.sign(n);
-}
