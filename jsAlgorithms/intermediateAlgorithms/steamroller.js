@@ -1,4 +1,4 @@
-  function steamrollArray(arr) {
+function steamrollArray(arr) {
     return arr.reduce((flattenedArray, element) => 
       Array.isArray(element) ? 
         flattenedArray.concat(steamrollArray(element)) : 
@@ -9,3 +9,5 @@
   }
   
   steamrollArray([1, [2], [3, [[4]]]]);
+
+  //flatten a deeply nested array.
